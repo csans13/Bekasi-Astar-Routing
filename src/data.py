@@ -1,0 +1,23 @@
+nodes = {
+    'Pasar Bantar Gebang': (-6.313491, 106.987108),
+    'Perumahan Vida': (-6.320985, 107.000294),
+    'Terminal Bekasi': (-6.249158, 107.013482),
+    'Simpang Bulak Kapal': (-6.260884, 107.018686),
+    'Summarecon Bekasi': (-6.225566, 107.002893),
+    'Perumahan Taman Wisma Asri': (-6.209952, 107.026655),
+    'Stasiun Kranji': (-6.224633, 106.979595),
+    'Pasar Sumber Arta': (-6.249720, 106.945719),
+    'Kantor Walikota Kota Bekasi': (-6.235976, 106.993468),
+    'RSUD dr. Chasbullah Abdulmadjid': (-6.241748, 107.000417),
+    'Grand Galaxy Park': (-6.270829, 106.971745),
+    'Pasar Rawalumbu': (-6.271255, 107.001885),
+    'Perumnas III': (-6.242825, 107.036179),
+    'Harapan Indah': (-6.186043, 106.975038),
+    'Pondok Ungu Permai': (-6.180097, 107.008370),
+    'Komsen Jatiasih': (-6.296509, 106.958940),
+    'Kawasan Kranggan': (-6.365413, 106.920265),
+    'Pondok Gede Permai': (-6.299932, 106.970615),
+    'Pasar Pondok Gede': (-6.285634, 106.911580),
+    'Pasar Kecapi': (-6.305986, 106.934111),
+    'Kawasan Jatiwarna': (-6.310340, 106.925168)
+}
