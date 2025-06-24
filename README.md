@@ -1,16 +1,16 @@
 # Bekasi-Astar-Routing
 
-**Perencanaan Jalur Transportasi Umum Kota Bekasi berbasis Algoritma A\***
+**Perencanaan Jalur Transportasi Umum Kota Bekasi berbasis Algoritma A\*** 🚍🌐
 
 ---
 
-## Deskripsi
+## 📝 Deskripsi
 
-**Bekasi-Astar-Routing** mengimplementasikan perencanaan rute transportasi umum di Kota Bekasi dengan memanfaatkan algoritma A\*. Program ini membangun model jaringan jalan menggunakan data OpenStreetMap (OSM) yang diproses melalui pustaka OSMnx dan NetworkX. Pengguna dapat menentukan dua titik strategis sebagai asal dan tujuan perjalanan, lalu sistem akan merekomendasikan jalur terpendek yang mengikuti ruas jalan, lengkap dengan visualisasi interaktif berbasis Folium.
+**Bekasi-Astar-Routing** adalah mengimplementasikan perencanaan rute transportasi umum di Kota Bekasi dengan memanfaatkan algoritma A\*. Program ini membangun model jaringan jalan menggunakan data OpenStreetMap (OSM) yang diproses melalui pustaka OSMnx dan NetworkX. Pengguna dapat menentukan dua titik strategis sebagai asal dan tujuan perjalanan, lalu sistem akan merekomendasikan jalur terpendek yang mengikuti ruas jalan, lengkap dengan visualisasi interaktif berbasis Folium.
 
 ---
 
-## Fitur
+## ✨ Fitur
 
 * Pemetaan otomatis jaringan jalan Kota Bekasi dari OpenStreetMap
 * Pilihan titik asal dan tujuan berdasarkan koordinat atau nama strategis (terminal, stasiun, kawasan permukiman, dll.)
@@ -20,28 +20,36 @@
 
 ---
 
-## Struktur Direktori
+## 📁 Struktur Direktori
 
 ```
 bekasi-astar-routing/
-├── config.py
-├── data.py
-├── graph_utils.py
-├── astar_solver.py
-├── visualisasi.py
-├── main.py
-├── requirements.txt
+├── cache/                       # Cache OSMnx untuk mempercepat scraping peta
+├── doc/                         # Makalah
+├── src/                         # Kode sumber utama
+│   ├── astar_solver.py
+│   ├── config.py
+│   ├── data.py
+│   ├── graph_utils.py
+│   ├── main.py
+│   └── visualisasi.py
+├── test/                        # Hasil pengujian
+│   ├── Kawasan Kranggan ke Pondok Ungu Permai.html
+│   ├── Komsen Jatiasih ke Summarecon Bekasi.html
+│   ├── Pasar Bantar Gebang ke Harapan Indah.html
+│   └── Perumahan Vida ke Pasar Sumber Arta.html
 ├── README.md
+└── requirements.txt
 ```
 
 ---
 
-## Instalasi
+## ⚡ Instalasi
 
 1. **Clone repository ini:**
 
    ```bash
-   git clone https://github.com/yourusername/bekasi-astar-routing.git
+   git clone https://github.com/csans13/bekasi-astar-routing.git
    cd bekasi-astar-routing
    ```
 2. **Install dependencies:**
@@ -52,12 +60,13 @@ bekasi-astar-routing/
 
 ---
 
-## Cara Menjalankan
+## ▶️ Cara Menjalankan
 
-1. **Atur titik asal dan tujuan** di `config.py` dengan memilih dari `data.py` atau memasukkan koordinat sendiri.
-2. **Jalankan program utama:**
+1. **Atur titik asal dan tujuan** di `src/config.py` dengan memilih dari `src/data.py` atau memasukkan koordinat sendiri.
+2. **Jalankan program utama dari direktori src:**
 
    ```bash
+   cd src
    python main.py
    ```
 3. **Lihat hasil rute dan peta:**
@@ -67,9 +76,9 @@ bekasi-astar-routing/
 
 ---
 
-## Contoh Kasus Uji
+## 🧪 Contoh Kasus Uji
 
-Empat pengujian utama yang telah diimplementasikan:
+Empat pengujian utama yang telah diimplementasikan (hasil peta tersedia di folder `/test`):
 
 * Pasar Bantar Gebang ke Harapan Indah
 * Kawasan Kranggan ke Pondok Ungu Permai
@@ -78,4 +87,4 @@ Empat pengujian utama yang telah diimplementasikan:
 
 ---
 
-**Dikembangkan untuk kebutuhan riset dan edukasi transportasi umum Kota Bekasi.**
+> **Dikembangkan untuk kebutuhan riset dan edukasi transportasi umum Kota Bekasi.** 🚦🗺️
