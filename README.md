@@ -24,9 +24,10 @@
 
 ```
 bekasi-astar-routing/
-├── cache/                       # Cache OSMnx untuk mempercepat scraping peta
 ├── doc/                         # Makalah
 ├── src/                         # Kode sumber utama
+│   ├── __pycache__/             # File .pyc hasil kompilasi Python agar program berjalan lebih cepat
+│   ├── cache/                   # Cache OSMnx untuk mempercepat scraping peta
 │   ├── astar_solver.py
 │   ├── config.py
 │   ├── data.py
